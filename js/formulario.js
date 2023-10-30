@@ -84,28 +84,28 @@ function validarFormulario() {
 
 //------------------------------------ LocalStorage
 
-function salvarDados() {
-    var dados = {
-        nome: nome.value,
-        equipe: equipe.value,
-        placa: placa.value,
-        modelo: modelo.value,
-        local: local.value,
-        data: new Date().toLocaleDateString(),
-        hora: new Date().toLocaleTimeString()
-    };
-    localStorage.setItem("dadosTemp", JSON.stringify(dados));
-}
+// function salvarDados() {
+//     var dados = {
+//         nome: nome.value,
+//         equipe: equipe.value,
+//         placa: placa.value,
+//         modelo: modelo.value,
+//         local: local.value,
+//         data: new Date().toLocaleDateString(),
+//         hora: new Date().toLocaleTimeString()
+//     };
+//     localStorage.setItem("dadosTemp", JSON.stringify(dados));
+// }
 
-document.getElementById("btnEnviar").addEventListener("click", (evento) => {
-    evento.preventDefault()
-    if (validarFormulario()) {
-        salvarDados()
-        window.location.href = "desligar1.html"
-    }
-    else {
-        alert("Por favor preencha todos os campos.");
-    }
+// document.getElementById("btnEnviar").addEventListener("click", (evento) => {
+//     evento.preventDefault()
+//     if (validarFormulario()) {
+//         salvarDados()
+//         window.location.href = "desligar1.html"
+//     }
+//     else {
+//         alert("Por favor preencha todos os campos.");
+//     }
 
-});
+// });
 
